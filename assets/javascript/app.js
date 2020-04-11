@@ -19,11 +19,25 @@ $(".btn").on("click", function(event) {
     event.preventDefault();
     userInput = $("#search").val().trim();
     database.ref().push({
-        userInput: userInput,
-        dateAdded: firebase.database.ServerValue.TIMESTAMP
-    })
+        actor: userInput,
+        dateAdded: firebase.database.ServerValue.TIMESTAMP,
 
+<<<<<<< HEAD
     //calls the function from the giphy js page
     displayGif()
+=======
+    })
+>>>>>>> ddc81cdf840b5b7a826532ea47baff4b8f0e1f3a
 
 })
+
+database.ref().limitToLast(3)
+.on("child_added", function(childSnapshot) {
+    
+    var newHist = childSnapshot.val().actor
+    var history = $("<p>").text(newHist)
+    $("#history").append(history)
+
+}, function(errorObject) {
+    console.log("Errors handled: " + errorObject.code);
+});
