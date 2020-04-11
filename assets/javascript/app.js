@@ -22,13 +22,10 @@ $(".btn").on("click", function(event) {
         actor: userInput,
         dateAdded: firebase.database.ServerValue.TIMESTAMP,
 
-<<<<<<< HEAD
     //calls the function from the giphy js page
-    displayGif()
-=======
+   
     })
->>>>>>> ddc81cdf840b5b7a826532ea47baff4b8f0e1f3a
-
+   displayGifs()
 })
 
 database.ref().limitToLast(3)
