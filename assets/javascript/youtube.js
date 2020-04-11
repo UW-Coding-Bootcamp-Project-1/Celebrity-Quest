@@ -4,7 +4,7 @@ var youtubeURL = "https://www.googleapis.com/youtube/v3/channels" + topic + "&AI
 
 // Creating AJAX Call
 $.ajax({
-    url: "https://www.googleapis.com/youtube/v3/channels",
+    url: youtubeURL,
     method: "GET"
   }).then(function(response) {
     console.log(response);
