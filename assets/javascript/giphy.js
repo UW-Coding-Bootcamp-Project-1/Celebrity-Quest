@@ -12,12 +12,14 @@ $.ajax({
     console.log(response)
 });
 
+var gifImg = $("<img>")
+
+gifImg.attr("src", response.data.images.fixed_height.url)
+
+$("#giphy").append(gifImg)
 
 
-
-
-
-
+console.log("hello")
 
 }
 

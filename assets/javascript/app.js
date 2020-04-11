@@ -23,5 +23,7 @@ $(".btn").on("click", function(event) {
         dateAdded: firebase.database.ServerValue.TIMESTAMP
     })
 
+    //calls the function from the giphy js page
+    displayGif()
 
 })
