@@ -8,9 +8,5 @@ $.ajax({
     method: "GET"
   }).then(function(response) {
     console.log(response);
-<<<<<<< HEAD
 
   })
-=======
-  });
->>>>>>> 25807cc456ce0c1a5a1a13b537f9cfcee3699ad3
