@@ -1,0 +1,28 @@
+1. Get our API keys 
+    - GIPHY, IMDB, YouTube
+
+2. Set up the firebase 
+    - Research if you can add other collaborators in firebase
+
+3. Console in JavaScript to test API functionality
+
+4. Start HTML with basic layout
+    - Use Materialize CSS Framework to get started
+
+5. Set up firebase & JavaScript codes 
+    - Adding our API's 
+    - Linking the firebase
+    - Set up variabes for each API at a time
+
+6. Create on click function for the search bar
+
+7. Get codes to display in HTML 
+    - IMDB section will be underneath the actor's name & headshot
+    - headshot will come from IMDB 
+    - Youtube & GIPHY sections inline 2 columns under IMDB section 
+    - Search history section will populate data from firebase (next to search bar)
+
+8. Make sure correct data is displayed in firebase
+    - Actor's name 
+
+
