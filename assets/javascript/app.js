@@ -25,7 +25,8 @@ $(".btn").on("click", function(event) {
     //calls the function from the giphy js page
    
     })
-   displayGifs()
+   userSearch()
+   
 })
 
 database.ref().limitToLast(3)
