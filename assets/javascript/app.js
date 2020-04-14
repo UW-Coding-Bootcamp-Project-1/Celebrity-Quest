@@ -25,8 +25,9 @@ $(".btn").on("click", function(event) {
     //calls the function from the giphy js page
    
     })
+    
    userSearch()
-
+//clear the actor array so the HTML displays only one set of each content
   actor = [];
    
 })
