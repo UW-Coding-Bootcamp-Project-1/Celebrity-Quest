@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 // Storing YouTube API key & URL
 function videos() {
-  var youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=3&q="  + actor + "&key=AIzaSyBvDT6JrY1UC0jumUEXSLLw-97HjDh5nb4";
+  var youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=3&q="  + actor + "&limit=3&key=AIzaSyC5T7Hpx41SCvhtbhlbfNIuSDq97B-TrhM";
 
   // Creating AJAX Call
   $.ajax({
