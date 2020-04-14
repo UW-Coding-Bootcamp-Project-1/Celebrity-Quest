@@ -8,3 +8,7 @@
 <img src="Wireframe/Wireframe-2.png"
      alt="Wireframe Image"
      style="float: left; margin-right: 10px;" />
+
+
+4. Link to GitHub Pages 
+      https://uw-coding-bootcamp-project-1.github.io/Celebrity-Quest/
