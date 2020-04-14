@@ -19,9 +19,8 @@ $.ajax({
         gif.attr("src", response.data[i].images.fixed_height.url);
         $("#giphy").append(gif)
     }
-    
-
 });
+    $("#giphy").empty()
 
 }
 
@@ -33,3 +32,5 @@ function userSearch(){
 
     displayGifs()
 }
+
+

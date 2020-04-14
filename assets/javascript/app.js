@@ -26,6 +26,8 @@ $(".btn").on("click", function(event) {
    
     })
    userSearch()
+
+  actor = [];
    
 })
 
