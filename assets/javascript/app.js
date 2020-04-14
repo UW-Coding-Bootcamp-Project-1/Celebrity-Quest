@@ -22,8 +22,13 @@ $(".btn").on("click", function(event) {
         actor: userInput,
         dateAdded: firebase.database.ServerValue.TIMESTAMP,
 
+    //calls the function from the giphy js page
+   
     })
+   userSearch()
 
+  actor = [];
+   
 })
 
 database.ref().limitToLast(3)
