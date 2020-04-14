@@ -25,9 +25,14 @@ $(".btn").on("click", function(event) {
     //calls the function from the giphy js page
    
     })
+   
+   
    userSearch()
+   displayArticles()
 
   actor = [];
+  $("#actor-name").text(celebrity);
+  
    
 })
 
