@@ -9,7 +9,7 @@ function videos() {
   //Test
   // var youtubeURL = "https://www.googleapis.com/youtube/v3/search?q=something&key=YOUR_API_KEY&fields=items(id,snippet(title,thumbnails(default))&part=snippet"
 
-  var youtubeURL = "https://www.googleapis.com/youtube/v3/search?q=something&key=AIzaSyC5T7Hpx41SCvhtbhlbfNIuSDq97B-TrhM&fields=items" + vidId + vidTitle + vidThumb + "&part=snippet"
+  var youtubeURL = "https://www.googleapis.com/youtube/v3/search?q=something&key=AIzaSyC5T7Hpx41SCvhtbhlbfNIuSDq97B-TrhM&fields=items(id,snippet(title,thumbnails))&part=snippet"
 
   // Ashley's API - AIzaSyC5T7Hpx41SCvhtbhlbfNIuSDq97B-TrhM
 
