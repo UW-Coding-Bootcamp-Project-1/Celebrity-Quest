@@ -1,10 +1,11 @@
 var celebrity = $("#search").val().trim();
+console.log("celebrity: ", celebrity);
 
-var queryUrl = "https://newsapi.org/v2/everything?q=" + celebrity + "&apiKey=fc2c7b8801ca4a74b282a840c97ec173";
+//var queryUrl = "https://newsapi.org/v2/everything?q=" + celebrity + "&apiKey=f9a29869e5cd42f4b0d2a6a4b9a85c6c";
 
 
 //Add to on-click function: $("#actor-name").text(celebrity);
-
+function displayArticles() {
 
     $.ajax({
       url: queryUrl,
@@ -21,7 +22,6 @@ var queryUrl = "https://newsapi.org/v2/everything?q=" + celebrity + "&apiKey=fc2
       var imgUrl1 = response.articles[0].urlToImage;
       var articleImg1 = $('<img src="' + imgUrl1 + '" width="400">');
       $("#article1").append(articleImg1);
-      //include this image for #actor-img??
     
 
       var title2 = response.articles[1].title;
@@ -48,3 +48,14 @@ var queryUrl = "https://newsapi.org/v2/everything?q=" + celebrity + "&apiKey=fc2
 
 
     });
+
+}    
+
+/*function userSearch2(){
+    var addSearch = $("#search").val().trim();
+
+    actor.push(addSearch)
+    console.log("celebrity", celebrity);
+
+    displayArticles()
+}*/
