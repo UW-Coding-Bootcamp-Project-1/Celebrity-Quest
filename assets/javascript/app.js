@@ -28,7 +28,14 @@ $(".btn").on("click", function(event) {
     
    userSearch()
 //clear the actor array so the HTML displays only one set of each content
+   
+   
+   userSearch()
+   displayArticles()
+
   actor = [];
+  $("#actor-name").text(celebrity);
+  
    
 })
 
