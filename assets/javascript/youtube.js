@@ -1,5 +1,3 @@
-$(document).ready(function() {
-
 // Storing YouTube API key & URL
 function videos() {
   // var youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=3&q="  + actor + "&limit=3&key=AIzaSyBvDT6JrY1UC0jumUEXSLLw-97HjDh5nb4";
@@ -9,9 +7,11 @@ function videos() {
   //Test
   // var youtubeURL = "https://www.googleapis.com/youtube/v3/search?q=something&key=YOUR_API_KEY&fields=items(id,snippet(title,thumbnails(default))&part=snippet"
 
-  var youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&?q=" + celebrity + "&limit=1&key=AIzaSyBvDT6JrY1UC0jumUEXSLLw-97HjDh5nb4";
+  var youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&limit=1&key=AIzaSyBvDT6JrY1UC0jumUEXSLLw-97HjDh5nb4";
+
   var celebrity = $("#search").val().trim();
 
+  
   // Ashley's API - AIzaSyC5T7Hpx41SCvhtbhlbfNIuSDq97B-TrhM
 
 
@@ -19,6 +19,9 @@ function videos() {
   $.ajax({
       url: youtubeURL,
       method: "GET",
+      data: {
+        q: celebrity
+      }
     }).then(function(response) {
       console.log(response)
               
@@ -27,17 +30,17 @@ function videos() {
       // Container for videos
       var vidDiv = $("<div>");
 
-      var videoPlayer = $('<video />', {
-        id: vidId,
-        src: 'https://www.youtube.com/watch?v=' + vidId,
-        type: 'video/mp4',
-        controls: true
-    });
-
       // Gathering video info
-      var vidTitle = $("#vidTitle").text("Title: " + response.items[i].snippet.title);
+      var vidTitle = $("#vidTitle").text(response.items[i].snippet.title);
       var vidDesc = $("#desc").text(response.items[i].snippet.description);
       var vidId = response.items[i].id.videoId;
+
+      var videoPlayer = $('<video />', {
+        type: 'video/mp4',
+        controls: true
+      });
+
+      videoPlayer.attr('src', 'https://www.youtube.com/watch?v=' + vidId);
 
       // vidDiv.empty();
       // var videoPlayer = $("<video>");
@@ -56,4 +59,3 @@ function videos() {
     });
   }
   videos();
-});
