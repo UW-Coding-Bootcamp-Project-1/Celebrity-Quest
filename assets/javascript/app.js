@@ -1,3 +1,4 @@
+$(document).ready(function() {
 // Initializing Firebase
 var config = {
     apiKey: "AIzaSyDBGIwKC1eALMjEA6wNo9L45PgWdeZghEw",
@@ -32,6 +33,7 @@ $(".btn").on("click", function(event) {
    
    userSearch()
    displayArticles()
+   videos()
 
   actor = [];
   $("#actor-name").text(celebrity);
@@ -48,4 +50,5 @@ database.ref().limitToLast(3)
 
 }, function(errorObject) {
     console.log("Errors handled: " + errorObject.code);
+});
 });
