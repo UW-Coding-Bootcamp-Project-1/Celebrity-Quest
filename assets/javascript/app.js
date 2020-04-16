@@ -25,7 +25,6 @@ $(".btn").on("click", function(event) {
 
     //calls the function from the giphy js page
     })
-<<<<<<< HEAD
   $("#search").empty()  
   
 //clear the actor array so the HTML displays only one set of each content
@@ -34,17 +33,6 @@ $(".btn").on("click", function(event) {
    displayGifs(userInput)
    displayArticles(userInput)
    videos()
-=======
-
-    //clear the actor array so the HTML displays only one set of each content
-   
-   userSearch(userInput)
-   displayArticles()
-   
-   displayArticles(userInput)
-   videos(userInput)
-
->>>>>>> master
 
   actor = [];
   $("#actor-name").text(userInput);
