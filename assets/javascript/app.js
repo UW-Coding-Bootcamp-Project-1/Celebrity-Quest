@@ -32,7 +32,7 @@ $(".btn").on("click", function(event) {
    
    
    displayGifs(userInput)
-   displayArticles()
+   displayArticles(userInput)
    videos()
 
   actor = [];
