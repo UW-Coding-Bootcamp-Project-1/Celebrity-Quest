@@ -1,11 +1,14 @@
-var celebrity = $("#search").val().trim();
+/*var celebrity = $("#search").val().trim();
 console.log("celebrity: ", celebrity);
 
-var queryUrl = "https://newsapi.org/v2/everything?q=" + celebrity + "&apiKey=f9a29869e5cd42f4b0d2a6a4b9a85c6c";
+var queryUrl = "https://newsapi.org/v2/everything?q=" + celebrity + "&apiKey=f9a29869e5cd42f4b0d2a6a4b9a85c6c";*/
 
 
 //Add to on-click function: $("#actor-name").text(celebrity);
-function displayArticles() {
+function displayArticles(celebrity) {
+
+  var queryUrl = "https://newsapi.org/v2/everything?q=" + celebrity + "&apiKey=f9a29869e5cd42f4b0d2a6a4b9a85c6c";
+
 
     $.ajax({
       url: queryUrl,
