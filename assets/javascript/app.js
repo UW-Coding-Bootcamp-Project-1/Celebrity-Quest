@@ -35,6 +35,7 @@ $(".btn").on("click", function(event) {
    displayArticles()
    videos(userInput)
 
+
   actor = [];
   $("#actor-name").text(celebrity);
   
