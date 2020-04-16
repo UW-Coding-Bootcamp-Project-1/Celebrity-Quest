@@ -1,8 +1,10 @@
 // this file holds the Giphy API code 
-var actor = [];
 
-function displayGifs(){
 
+var actor = $("#search").val().trim();
+
+
+function displayGifs(actor){
 
 // var topic = $(this).attr("data-name");
 
@@ -26,13 +28,5 @@ $.ajax({
 
 
 
-function userSearch(){
-    var addSearch = $("#search").val().trim();
-
-    actor.push(addSearch)
-    console.log("actor", actor)
-
-    displayGifs()
-}
 
 

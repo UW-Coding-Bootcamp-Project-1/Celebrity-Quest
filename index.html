@@ -10,7 +10,7 @@
     <title>Celebrity Quest!</title>
 </head>
 <body>
-
+<div id="main-content">
     <nav>
         <div class="nav-wrapper">
           <a href="#" class="brand-logo center">Celebrity Quest! <p>Find out more about a celebrity who piques your interest!</p> </a>
@@ -21,29 +21,29 @@
         <div class="row">
             <div class="col s12 m5">
               <div class="card-panel teal">
+                <h2 id="card-header">Other celebrities who have recently been searched for:</h2>
                 <span id="history" class="white-text">
                 </span>
               </div>
             </div>
           </div>
         
-          <nav>
-            <div class="nav-wrapper">
-              <form>
+           
+              <div id="search-bar">
                 <div class="input-field">
                   <input id="search" type="search" required>
                   <label class="label-icon" for="search"><i class="material-icons">search</i></label>
                   <i class="material-icons">close</i>
                 </div>
-                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                    <i class="material-icons right">send</i>
-                  </button>
-              </form>
-            </div>
-          </nav>
+                <button class="btn waves-effect waves-light" id="submit" type="submit" name="action">Submit
+                  <i class="material-icons right">send</i>
+                </button>
+              </div>
+              <!--</form>-->
+            
       </div>
 
-      <div>
+      <div id="name-image">
           <h1 id="actor-name"></h1>
           <img id="actor-img" src="" alt="">
       </div>
@@ -57,7 +57,7 @@
           </div>
       </div>
 
-      <div>
+      <div id="vid-gif">
 
          <div id="youtube">
            <h3 id="vidTitle"></h3>
@@ -67,7 +67,7 @@
 
          <div id="giphy"></div> 
       </div>
-
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
