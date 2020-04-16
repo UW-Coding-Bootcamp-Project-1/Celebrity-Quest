@@ -24,16 +24,17 @@ $(".btn").on("click", function(event) {
         dateAdded: firebase.database.ServerValue.TIMESTAMP,
 
     //calls the function from the giphy js page
-   
     })
-    
+  $("#search").empty()  
   
 //clear the actor array so the HTML displays only one set of each content
    
    
-   userSearch()
+
+   userSearch(userInput)
    displayArticles(userInput)
    videos(userInput)
+
 
 
   actor = [];
