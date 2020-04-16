@@ -24,7 +24,6 @@ $(".btn").on("click", function(event) {
         dateAdded: firebase.database.ServerValue.TIMESTAMP,
 
     //calls the function from the giphy js page
-   
     })
 
     //clear the actor array so the HTML displays only one set of each content
@@ -34,6 +33,7 @@ $(".btn").on("click", function(event) {
    
    displayArticles(userInput)
    videos(userInput)
+
 
 
   actor = [];
