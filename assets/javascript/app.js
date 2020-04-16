@@ -26,12 +26,12 @@ $(".btn").on("click", function(event) {
     //calls the function from the giphy js page
    
     })
-    
+  $("#search").empty()  
   
 //clear the actor array so the HTML displays only one set of each content
    
    
-   userSearch()
+   displayGifs(userInput)
    displayArticles()
    videos()
 
