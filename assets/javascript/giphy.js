@@ -1,5 +1,8 @@
 // this file holds the Giphy API code 
+
+
 var actor = $("#search").val().trim();
+
 
 function displayGifs(actor){
 
