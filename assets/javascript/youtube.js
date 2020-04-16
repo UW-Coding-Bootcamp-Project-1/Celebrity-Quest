@@ -65,5 +65,5 @@ function videos(celebrity) {
     });
   }
 
-// $("#youtube").empty()
+$("#youtube").empty()
 
