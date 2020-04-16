@@ -33,7 +33,7 @@ $(".btn").on("click", function(event) {
    
    userSearch()
    displayArticles()
-   videos()
+   videos(userInput)
 
   actor = [];
   $("#actor-name").text(celebrity);
