@@ -1,7 +1,7 @@
 // this file holds the Giphy API code 
 var actor = [];
 
-function displayGifs(){
+function displayGifs(actor){
 
 
 // var topic = $(this).attr("data-name");
