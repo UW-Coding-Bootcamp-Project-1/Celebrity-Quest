@@ -7,7 +7,7 @@ function videos(celebrity) {
   //Test
   // var youtubeURL = "https://www.googleapis.com/youtube/v3/search?q=something&key=YOUR_API_KEY&fields=items(id,snippet(title,thumbnails(default))&part=snippet"
 
-  var youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=3&limit=3&key=AIzaSyBvDT6JrY1UC0jumUEXSLLw-97HjDh5nb4";
+  var youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=3&limit=3&order=relevance&key=AIzaSyC5T7Hpx41SCvhtbhlbfNIuSDq97B-TrhM";
 
   
   // Ashley's API - AIzaSyC5T7Hpx41SCvhtbhlbfNIuSDq97B-TrhM
@@ -23,7 +23,7 @@ function videos(celebrity) {
     }).then(function(response) {
       console.log(response)
             
-      $("#youtube").empty()
+    
 
       for (var i = 0; i < response.items.length; i++) {
 
@@ -34,17 +34,22 @@ function videos(celebrity) {
       var vidTitle = $("<h3>").text(response.items[i].snippet.title);
       var vidDesc = $("<p>").text(response.items[i].snippet.description);
       var vidId = response.items[i].id.videoId;
+      var vidThumbnail = response.items[i].snippet.thumbnails.high.url;
 
-      var videoPlayer = $('<video />', {
+      var videoPlayer = $('<iframe />', {
         type: 'video/mp4',
-        controls: true
+        controls: true,
+        poster: vidThumbnail,
+        height: 300,
+        width: 400
       });
 
-      videoPlayer.attr('src', 'https://www.youtube.com/watch?v=' + vidId);
+      videoPlayer.attr('src', 'https://www.youtube.com/embed/' + vidId);
+     
 
+      vidDiv.append(videoPlayer)
       vidDiv.append(vidTitle)
       vidDiv.append(vidDesc)
-      vidDiv.append(videoPlayer)
 
       $("#youtube").append(vidDiv)
 
@@ -59,4 +64,6 @@ function videos(celebrity) {
       }
     });
   }
-  videos();
+
+// $("#youtube").empty()
+
