@@ -1,0 +1,39 @@
+#name-image {
+    display: flex;
+}
+
+#actor-name {
+    flex: 1;
+}
+
+#actor-img {
+    flex: 1;
+}
+
+#artticles {
+    display: flex;
+}
+
+#article1 {
+    flex: 1;
+}
+
+#article2 {
+    flex: 1;
+}
+
+#article3 {
+    flex: 1;
+}
+
+#vid-gif {
+    display: flex;
+}
+
+#youtube {
+    flex: 1;
+}
+
+#giphy {
+    flex: 1;
+}
