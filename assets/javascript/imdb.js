@@ -1,5 +1,5 @@
-var celebrity = $("#search").val().trim();
-console.log("celebrity: ", celebrity);
+//var celebrity = $("#search").val().trim();
+//console.log("celebrity: ", celebrity);
 
 /*var queryUrl = "https://newsapi.org/v2/everything?q=" + celebrity + "&apiKey=f9a29869e5cd42f4b0d2a6a4b9a85c6c";*/
 
