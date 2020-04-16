@@ -1,5 +1,5 @@
 // Storing YouTube API key & URL
-function videos() {
+function videos(celebrity) {
   // var youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=3&q="  + actor + "&limit=3&key=AIzaSyBvDT6JrY1UC0jumUEXSLLw-97HjDh5nb4";
 
   // My API Key - AIzaSyBvDT6JrY1UC0jumUEXSLLw-97HjDh5nb4
@@ -8,8 +8,6 @@ function videos() {
   // var youtubeURL = "https://www.googleapis.com/youtube/v3/search?q=something&key=YOUR_API_KEY&fields=items(id,snippet(title,thumbnails(default))&part=snippet"
 
   var youtubeURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=3&limit=3&key=AIzaSyBvDT6JrY1UC0jumUEXSLLw-97HjDh5nb4";
-
-  var celebrity = $("#search").val().trim();
 
   
   // Ashley's API - AIzaSyC5T7Hpx41SCvhtbhlbfNIuSDq97B-TrhM
