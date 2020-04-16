@@ -30,12 +30,15 @@ $(".btn").on("click", function(event) {
 //clear the actor array so the HTML displays only one set of each content
    
    
-   displayGifs(userInput)
+
+   userSearch(userInput)
    displayArticles(userInput)
-   videos()
+   videos(userInput)
+
+
 
   actor = [];
-  $("#actor-name").text(celebrity);
+  $("#actor-name").text(userInput);
   
    
 })
