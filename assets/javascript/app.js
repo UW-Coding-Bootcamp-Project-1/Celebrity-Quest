@@ -28,7 +28,7 @@ $(".btn").on("click", function(event) {
 
     //clear the actor array so the HTML displays only one set of each content
    
-   userSearch(userInput)
+   displayGifs(userInput)
    displayArticles(userInput)
    videos(userInput)
 
