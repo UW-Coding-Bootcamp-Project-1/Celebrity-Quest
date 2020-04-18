@@ -14,7 +14,13 @@ body{
     font-family: 'Abril Fatface', cursive;
     font-size: 40px;
     text-align: center;
+    width: 100%;
 
+}
+
+#header h1 {
+    margin-left: 35%;
+    padding: 10px;
 }
 
 
