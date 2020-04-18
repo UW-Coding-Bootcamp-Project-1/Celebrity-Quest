@@ -46,6 +46,7 @@ function videos(celebrity) {
 
       videoPlayer.attr('src', 'https://www.youtube.com/embed/' + vidId);
      
+      vidDiv.append("<h3>"+"Youtube Videos"+"</h3>")
       vidDiv.append(videoPlayer)
       vidDiv.append(vidTitle)
       vidDiv.append(vidDesc)

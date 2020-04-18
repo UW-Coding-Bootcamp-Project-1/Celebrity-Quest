@@ -61,7 +61,7 @@ body{
     display: flex;
 }
 
-.tubeHeader {
+#youtube h3 {
     background-color: #F7C0AC;
 }
 
