@@ -61,8 +61,13 @@ body{
     display: flex;
 }
 
+.tubeHeader {
+    background-color: #F7C0AC;
+}
+
 #youtube {
     flex: 1;
+    background-color: #FBDFD5;
 }
 
 #giphy {
