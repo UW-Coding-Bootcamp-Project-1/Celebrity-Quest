@@ -14,7 +14,9 @@ var config = {
     var database = firebase.database();
 
     var userInput = ""
-
+    
+    //hide gif section on document load
+    $("#gif-section").hide()
 // On click
 $(".btn").on("click", function(event) {
     event.preventDefault();
@@ -32,7 +34,8 @@ $(".btn").on("click", function(event) {
    displayArticles(userInput)
    videos(userInput)
 
-
+    //show gif section on button click
+    $("#gif-section").show()
 
   actor = [];
   $("#actor-name").text(userInput);
