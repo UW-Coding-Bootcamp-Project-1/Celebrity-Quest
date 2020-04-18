@@ -1,10 +1,9 @@
-//var celebrity = $("#search").val().trim();
-//console.log("celebrity: ", celebrity);
+$(document).ready(function(){
+  $("#news").hide()
+  $("#articles").hide()
+})
 
-/*var queryUrl = "https://newsapi.org/v2/everything?q=" + celebrity + "&apiKey=f9a29869e5cd42f4b0d2a6a4b9a85c6c";*/
 
-
-//Add to on-click function: $("#actor-name").text(celebrity);
 function displayArticles(celebrity) {
 
   var queryUrl = "https://newsapi.org/v2/everything?q=" + celebrity + "&apiKey=f9a29869e5cd42f4b0d2a6a4b9a85c6c";
@@ -52,13 +51,9 @@ function displayArticles(celebrity) {
 
     });
 
+  $("#article1").empty(); 
+  $("#article2").empty(); 
+  $("#article3").empty();
+
 }    
 
-/*function userSearch2(){
-    var addSearch = $("#search").val().trim();
-
-    actor.push(addSearch)
-    console.log("celebrity", celebrity);
-
-    displayArticles()
-}*/
