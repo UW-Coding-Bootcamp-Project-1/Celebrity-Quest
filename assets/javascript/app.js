@@ -14,6 +14,12 @@ var config = {
     var database = firebase.database();
 
     var userInput = ""
+    
+    //hide gif section on document load
+    $("#gif-section").hide()
+
+    // Hide Youtube section
+    $("#yt-section").hide()
 
 // On click
 $(".btn").on("click", function(event) {
@@ -22,6 +28,8 @@ $(".btn").on("click", function(event) {
     $("#news").show();
     $("#articles").show();
     $("#name-image").show();
+    $("#yt-section").show()
+
     database.ref().push({
         actor: userInput,
         dateAdded: firebase.database.ServerValue.TIMESTAMP,
@@ -29,11 +37,18 @@ $(".btn").on("click", function(event) {
     //calls the function from the giphy js page
     })
 
-    //clear the actor array so the HTML displays only one set of each content
+    //clear the search bar after the button is clicked
+    
+
    
    displayGifs(userInput)
    displayArticles(userInput)
    videos(userInput)
+
+
+    //show gif section on button click
+    $("#gif-section").show()
+
 
 
 

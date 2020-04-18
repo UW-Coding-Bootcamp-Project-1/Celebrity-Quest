@@ -7,26 +7,62 @@ body{
     width: 100%;
 }
 
+#header {
+    display: flex;
+    background-color: #B0EBBD;
+    color: #313B56;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+
+#history {
+    background-color: #F7C0AC;
+    height: 200px;
+    width: 200px;
+    color: #313B56;
+}
+
 #main-content {
     width: 80%;
+    margin-bottom: 100px;
+    margin: auto;
+}
+
+#top-section {
+    display: flex;
+    margin-top: 40px;
+    width: 80%;
+}
+
+#search-section p {
+    background-color: #F7C0AC;
+    margin: 10px;
+    color: #313B56;
+    padding: 10px;
 }
 
 #search {
     flex: 1;
-    width: 275px;
+    width: 300px;
+    height: 30px;
+    background-color: #B0EBBD;
+    color: #313B56;
+
 }
+
 
 #search-bar {
     display: flex;
-    
-    
 }
 
 #submit {
-    
     height: 30px;
-    background-color: blue;
-    
+    background-color:#F7C0AC;
+    margin-top: 15px;
+    color: #313B56;
 }
 
 #name-image {
@@ -141,10 +177,46 @@ body{
 
 #vid-gif {
     display: flex;
+    width: 80%;
 }
 
-#youtube {
+#yt-section {
+    text-align: center;
     flex: 1;
+    background-color: #FBDFD5;
+    border: 1px solid #F8E2DB;
+    width: 70%;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.mainHeader {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: xx-large;
+    background-color: #F7C0AC;
+    border-bottom: 1px solid #F8E2DB;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 50px;
+    color: white;
+    padding: 15px;
+}
+
+#desc {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: 10px 45px 50px 45px;
+}
+
+#vidTitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: larger;
+    text-align: center;
+    margin: 20px 20px 15px 20px;
+    padding: 0px 50px 0px 50px;
 }
 
 #gif-section {
@@ -152,9 +224,11 @@ body{
     background-color: #F7C0AC;
     border: 1px solid #F8E2DB;
     height: 1150px;
-    width: 70%;
+    width: 100%;
     border-radius: 10px;
     margin: 20px;
+    margin-left: 100px;
+    
 }
 
 #gif-section h3 {
@@ -165,7 +239,9 @@ body{
     height: 50px;
     color: white;
     text-align: center;
-    padding: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    padding: 13px;
 }
 
 #giphy {
@@ -174,23 +250,12 @@ body{
     border: 1px solid #F8E2DB;
     height: 1150px;
     width: 100%;
-   
+    overflow: hidden;
 }
 
-/* #giphy h3 {
-    background-color: #F7C0AC;
-    border-bottom: 1px solid #F8E2DB;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    height: 50px;
-    color: white;
-    opacity: 100%;
-    text-align: center;
-    padding: 15px;
-} */
 .gif {
-    height: 30%;
-    width: 100%;
+    height: 1;
+    width: 1;
     padding: 30px;
     opacity: 100%;
     margin-top: 20px;
