@@ -9,6 +9,8 @@ body{
 
 #main-content {
     width: 80%;
+    margin-bottom: 100px;
+    margin: auto;
 }
 
 #search {
@@ -70,6 +72,7 @@ body{
     width: 100%;
     border-radius: 10px;
     margin: 20px;
+    margin-left: 100px;
     
 }
 
