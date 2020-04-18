@@ -47,14 +47,39 @@ body{
 
 #article1 {
     flex: 1;
+    background-color: #B0EBBD ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 275px;
 }
 
 #article2 {
     flex: 1;
+    background-color: #B0EBBD ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 275px;
 }
 
 #article3 {
     flex: 1;
+    background-color: #B0EBBD ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 275px;
 }
 
 #vid-gif {
@@ -119,3 +144,4 @@ body{
     margin-top: 20px;
     border-radius: 10px;
 }
+
