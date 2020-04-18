@@ -18,15 +18,11 @@ body{
 
 #search-bar {
     display: flex;
-    
-    
 }
 
 #submit {
-    
     height: 30px;
     background-color: blue;
-    
 }
 
 #name-image {
@@ -86,8 +82,8 @@ body{
     color: white;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    padding: 15px;
+    font-size: 30px;
+    padding: 13px;
 }
 
 #giphy {
@@ -97,27 +93,13 @@ body{
     height: 1150px;
     width: 100%;
     overflow: hidden;
-   
 }
 
-/* #giphy h3 {
-    background-color: #F7C0AC;
-    border-bottom: 1px solid #F8E2DB;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    height: 50px;
-    color: white;
-    opacity: 100%;
-    text-align: center;
-    padding: 15px;
-} */
 .gif {
-    
     height: 1;
     width: 1;
     padding: 30px;
     opacity: 100%;
     margin-top: 20px;
     border-radius: 10px;
-    overflow: hidden;
 }
