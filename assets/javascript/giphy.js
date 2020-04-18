@@ -16,8 +16,11 @@ $.ajax({
 }).then(function(response){
     console.log(response)
 
+
     for (var i = 0; i < response.data.length; i++) {
+       
         var gif = $("<img>");
+        gif.addClass("gif")
         gif.attr("src", response.data[i].images.fixed_height.url);
         $("#giphy").append(gif)
     }

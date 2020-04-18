@@ -70,6 +70,52 @@ body{
     background-color: #FBDFD5;
 }
 
+#gif-section {
+    flex: 1;
+    background-color: #F7C0AC;
+    border: 1px solid #F8E2DB;
+    height: 1150px;
+    width: 70%;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#gif-section h3 {
+    background-color: #F7C0AC;
+    border-bottom: 1px solid #F8E2DB;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
 #giphy {
     flex: 1;
+    background-color: #FBDFD5 ;
+    border: 1px solid #F8E2DB;
+    height: 1150px;
+    width: 100%;
+   
+}
+
+/* #giphy h3 {
+    background-color: #F7C0AC;
+    border-bottom: 1px solid #F8E2DB;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 50px;
+    color: white;
+    opacity: 100%;
+    text-align: center;
+    padding: 15px;
+} */
+.gif {
+    height: 30%;
+    width: 100%;
+    padding: 30px;
+    opacity: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
 }
