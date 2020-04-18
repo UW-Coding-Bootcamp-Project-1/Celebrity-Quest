@@ -46,21 +46,14 @@ function videos(celebrity) {
 
       videoPlayer.attr('src', 'https://www.youtube.com/embed/' + vidId);
      
+      vidTitle.attr("id", "vidTitle")
+      vidDesc.attr("id", "desc")
 
-      vidDiv.append(videoPlayer)
       vidDiv.append(vidTitle)
+      vidDiv.append(videoPlayer)
       vidDiv.append(vidDesc)
 
       $("#youtube").append(vidDiv)
-
-      // vidDiv.empty();
-      // var videoPlayer = $("<video>");
-      // videoPlayer.attr('src', "'https://www.youtube.com/embed/" + vidId + "'");
-      // videoPlayer.attr('type', "video");
-      // videoPlayer.attr('width', 320);
-      // videoPlayer.attr('height', 240);
-    
-
       }
     });
   }
