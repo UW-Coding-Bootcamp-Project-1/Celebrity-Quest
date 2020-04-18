@@ -1,6 +1,7 @@
 $(document).ready(function(){
-  $("#news").hide()
-  $("#articles").hide()
+  $("#news").hide();
+  $("#articles").hide();
+  $("#name-image").hide();
 })
 
 
@@ -19,10 +20,14 @@ function displayArticles(celebrity) {
 
       var articleUrl1 = response.articles[0].url;
       var articleLink1 = $('<a href="' + articleUrl1 + '" target="_blank">' + title1 + '</a>');
-      $("#article1").append(articleLink1);
+      var articleHead1 = $("<h2>");
+      articleHead1.addClass("articleHead");
+      $(articleHead1).append(articleLink1);
+      $("#article1").append(articleHead1);
 
       var imgUrl1 = response.articles[0].urlToImage;
-      var articleImg1 = $('<img src="' + imgUrl1 + '" width="400">');
+      var articleImg1 = $('<img src="' + imgUrl1 + '" width="200">');
+      articleImg1.addClass("articleImg");
       $("#article1").append(articleImg1);
     
 
@@ -30,10 +35,14 @@ function displayArticles(celebrity) {
 
       var articleUrl2 = response.articles[1].url;
       var articleLink2 = $('<a href="' + articleUrl2 + '" target="_blank">' + title2 + '</a>');
-      $("#article2").append(articleLink2);
+      var articleHead2 = $("<h2>");
+      articleHead2.addClass("articleHead");
+      $(articleHead2).append(articleLink2);
+      $("#article2").append(articleHead2);
 
       var imgUrl2 = response.articles[1].urlToImage;
-      var articleImg2 = $('<img src="' + imgUrl2 + '" width="400">');
+      var articleImg2 = $('<img src="' + imgUrl2 + '" width="200">');
+      articleImg2.addClass("articleImg");
       $("#article2").append(articleImg2);
       
 
@@ -41,10 +50,14 @@ function displayArticles(celebrity) {
 
       var articleUrl3 = response.articles[2].url;
       var articleLink3 = $('<a href="' + articleUrl3 + '" target="_blank">' + title3 + '</a>');
-      $("#article3").append(articleLink3);
+      var articleHead3 = $("<h2>");
+      articleHead3.addClass("articleHead");
+      $(articleHead3).append(articleLink3);
+      $("#article3").append(articleHead3);
 
       var imgUrl3 = response.articles[2].urlToImage;
-      var articleImg3 = $('<img src="' + imgUrl3 + '" width="400">');
+      var articleImg3 = $('<img src="' + imgUrl3 + '" width="200">');
+      articleImg3.addClass("articleImg");
       $("#article3").append(articleImg3);
       
 

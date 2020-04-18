@@ -25,9 +25,11 @@ var config = {
 $(".btn").on("click", function(event) {
     event.preventDefault();
     userInput = $("#search").val().trim();
-    $("#news").show()
-    $("#articles").show()
+    $("#news").show();
+    $("#articles").show();
+    $("#name-image").show();
     $("#yt-section").show()
+
     database.ref().push({
         actor: userInput,
         dateAdded: firebase.database.ServerValue.TIMESTAMP,
