@@ -19,6 +19,8 @@ var config = {
 $(".btn").on("click", function(event) {
     event.preventDefault();
     userInput = $("#search").val().trim();
+    $("#news").show()
+    $("#articles").show()
     database.ref().push({
         actor: userInput,
         dateAdded: firebase.database.ServerValue.TIMESTAMP,
@@ -36,6 +38,7 @@ $(".btn").on("click", function(event) {
 
   actor = [];
   $("#actor-name").text(userInput);
+  
   
    
 })
