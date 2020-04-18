@@ -26,9 +26,24 @@ body{
 
 #history {
     background-color: #F7C0AC;
-    height: 200px;
+    height: auto;
     width: 200px;
     color: #313B56;
+    text-align: center;
+    border-radius: 4px;
+}
+
+#history h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#history p {
+    font-family: 'Abril Fatface', cursive;
+    font-size: small;
+    padding: 3px;
+  
 }
 
 #main-content {
