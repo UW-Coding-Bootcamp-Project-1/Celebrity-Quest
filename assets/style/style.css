@@ -85,8 +85,43 @@ body{
     width: 80%;
 }
 
-#youtube {
+#yt-section {
+    text-align: center;
     flex: 1;
+    background-color: #FBDFD5;
+    border: 1px solid #F8E2DB;
+    width: 70%;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.mainHeader {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: xx-large;
+    background-color: #F7C0AC;
+    border-bottom: 1px solid #F8E2DB;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 50px;
+    color: white;
+    padding: 15px;
+}
+
+#desc {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: 10px 45px 50px 45px;
+}
+
+#vidTitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: larger;
+    text-align: center;
+    margin: 20px 20px 15px 20px;
+    padding: 0px 50px 0px 50px;
 }
 
 #gif-section {
