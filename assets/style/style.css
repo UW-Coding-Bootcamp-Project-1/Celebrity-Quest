@@ -38,11 +38,12 @@ body{
 }
 
 #search-section p {
+    font-family: 'Abril Fatface', cursive;
     background-color: #F7C0AC;
-    margin: 10px;
     color: #313B56;
     padding: 10px;
 }
+
 
 #search {
     flex: 1;
@@ -50,7 +51,7 @@ body{
     height: 30px;
     background-color: #B0EBBD;
     color: #313B56;
-
+    padding: 5px 15px 5px 15px;
 }
 
 
@@ -59,10 +60,13 @@ body{
 }
 
 #submit {
-    height: 30px;
     background-color:#F7C0AC;
+    height: 42px;
     margin-top: 15px;
     color: #313B56;
+    padding: 5px 15px 20px 15px;
+    text-align: center;
+    box-shadow: none;
 }
 
 #name-image {
@@ -242,7 +246,8 @@ body{
     color: white;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    font-size: 30px;
+    font-weight: 800;
+    font-size: xx-large;
     padding: 13px;
 }
 
