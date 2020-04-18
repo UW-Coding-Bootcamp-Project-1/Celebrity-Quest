@@ -47,39 +47,96 @@ body{
 
 #article1 {
     flex: 1;
-    background-color: #B0EBBD ;
+    background-color: #D7F5DE ;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 400px;
-    height: 275px;
+    width: 350px;
+    height: 250px;
+    overflow: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 #article2 {
     flex: 1;
-    background-color: #B0EBBD ;
+    background-color: #D7F5DE ;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 400px;
-    height: 275px;
+    width: 350px;
+    height: 250px;
+    overflow: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 #article3 {
     flex: 1;
-    background-color: #B0EBBD ;
+    background-color: #D7F5DE;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 400px;
-    height: 275px;
+    width: 350px;
+    height: 250px;
+    overflow: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.articleHead {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #B0EBBD;
+    font-family: 'Raleway', sans-serif;
+    margin-top: -10px;
+}
+
+.articleImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#news {
+    text-align: center;
+    background-color: #B0EBBD;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    color: #313B56;
+    font-family: 'Raleway', sans-serif;
+}
+
+#name-image {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+
 }
 
 #vid-gif {
