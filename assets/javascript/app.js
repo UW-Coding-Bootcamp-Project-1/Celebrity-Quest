@@ -17,12 +17,17 @@ var config = {
     
     //hide gif section on document load
     $("#gif-section").hide()
+
+    // Hide Youtube section
+    $("#yt-section").hide()
+
 // On click
 $(".btn").on("click", function(event) {
     event.preventDefault();
     userInput = $("#search").val().trim();
     $("#news").show()
     $("#articles").show()
+    $("#yt-section").show()
     database.ref().push({
         actor: userInput,
         dateAdded: firebase.database.ServerValue.TIMESTAMP,
@@ -37,6 +42,7 @@ $(".btn").on("click", function(event) {
    displayGifs(userInput)
    displayArticles(userInput)
    videos(userInput)
+
 
     //show gif section on button click
     $("#gif-section").show()
