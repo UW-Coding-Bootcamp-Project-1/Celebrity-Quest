@@ -154,6 +154,8 @@ body{
     width: 300px;
     color: #313B56;
     font-family: 'Raleway', sans-serif;
+    font-size: large;
+    font-weight: bold;
 }
 
 #name-image {
