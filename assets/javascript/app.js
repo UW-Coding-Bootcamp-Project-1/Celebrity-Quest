@@ -33,30 +33,22 @@ $(".btn").on("click", function(event) {
     database.ref().push({
         actor: userInput,
         dateAdded: firebase.database.ServerValue.TIMESTAMP,
-
-    //calls the function from the giphy js page
     })
 
     //clear the search bar after the button is clicked
-    
+    $("#search").val(" ")
 
-   
-   displayGifs(userInput)
-   displayArticles(userInput)
-   videos(userInput)
+    //calls the functions for each api
+    displayGifs(userInput)
+    displayArticles(userInput)
+    videos(userInput)
 
 
     //show gif section on button click
     $("#gif-section").show()
 
-
-
-
-  actor = [];
-  $("#actor-name").text(userInput);
-  
-  
-   
+    actor = [];
+    $("#actor-name").text(userInput);
 })
 
 database.ref().limitToLast(3)
