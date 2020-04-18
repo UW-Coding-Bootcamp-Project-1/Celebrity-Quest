@@ -7,16 +7,52 @@ body{
     width: 100%;
 }
 
+#header {
+    display: flex;
+    background-color: #B0EBBD;
+    color: #313B56;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+
+#history {
+    background-color: #F7C0AC;
+    height: 200px;
+    width: 200px;
+    color: #313B56;
+}
+
 #main-content {
     width: 80%;
     margin-bottom: 100px;
     margin: auto;
 }
 
+#top-section {
+    display: flex;
+    margin-top: 40px;
+    width: 80%;
+}
+
+#search-section p {
+    background-color: #F7C0AC;
+    margin: 10px;
+    color: #313B56;
+    padding: 10px;
+}
+
 #search {
     flex: 1;
-    width: 275px;
+    width: 300px;
+    height: 30px;
+    background-color: #B0EBBD;
+    color: #313B56;
+
 }
+
 
 #search-bar {
     display: flex;
@@ -24,7 +60,9 @@ body{
 
 #submit {
     height: 30px;
-    background-color: blue;
+    background-color:#F7C0AC;
+    margin-top: 15px;
+    color: #313B56;
 }
 
 #name-image {

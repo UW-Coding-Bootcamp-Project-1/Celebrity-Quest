@@ -30,7 +30,9 @@ $(".btn").on("click", function(event) {
     //calls the function from the giphy js page
     })
 
-    //clear the actor array so the HTML displays only one set of each content
+    //clear the search bar after the button is clicked
+    
+
    
    displayGifs(userInput)
    displayArticles(userInput)
@@ -38,6 +40,9 @@ $(".btn").on("click", function(event) {
 
     //show gif section on button click
     $("#gif-section").show()
+
+
+
 
   actor = [];
   $("#actor-name").text(userInput);
