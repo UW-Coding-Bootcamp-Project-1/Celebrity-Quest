@@ -37,8 +37,9 @@ $(".btn").on("click", function(event) {
     //calls the function from the giphy js page
     })
 
+
     //clear the search bar after the button is clicked
-    
+    $("#search").val(" ")
 
    
    displayGifs(userInput)
