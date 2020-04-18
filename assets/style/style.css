@@ -59,6 +59,7 @@ body{
 
 #vid-gif {
     display: flex;
+    width: 80%;
 }
 
 #youtube {
@@ -70,9 +71,10 @@ body{
     background-color: #F7C0AC;
     border: 1px solid #F8E2DB;
     height: 1150px;
-    width: 70%;
+    width: 100%;
     border-radius: 10px;
     margin: 20px;
+    
 }
 
 #gif-section h3 {
@@ -94,6 +96,7 @@ body{
     border: 1px solid #F8E2DB;
     height: 1150px;
     width: 100%;
+    overflow: hidden;
    
 }
 
@@ -109,11 +112,12 @@ body{
     padding: 15px;
 } */
 .gif {
+    
     height: 1;
     width: 1;
     padding: 30px;
     opacity: 100%;
     margin-top: 20px;
     border-radius: 10px;
-    
+    overflow: hidden;
 }
