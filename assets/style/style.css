@@ -99,6 +99,9 @@ body{
 
 #actor-name {
     flex: 1;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 75px;
 }
 
 #actor-img {
@@ -179,11 +182,11 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
-    color: #313B56;
+    width: 1000px;
     font-family: 'Raleway', sans-serif;
-    font-size: large;
-    font-weight: bold;
+    font-weight: 800;
+    font-size: xx-large;
+    color: white;
 }
 
 #name-image {
@@ -211,12 +214,17 @@ body{
     margin: auto;
 }
 
+.vidPlay {
+    padding: 0px 10px;
+    max-width: auto;
+}
+
 #yt-section {
     text-align: center;
     flex: 1;
     background-color: #FBDFD5;
     border: 1px solid #F8E2DB;
-    width: 70%;
+    width: 100%;
     border-radius: 10px;
     margin: 20px;
 }
@@ -234,6 +242,7 @@ body{
     color: white;
     padding: 15px;
 }
+
 
 #desc {
     font-family: 'Raleway', sans-serif;

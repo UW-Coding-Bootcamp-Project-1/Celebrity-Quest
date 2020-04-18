@@ -48,6 +48,7 @@ function videos(celebrity) {
      
       vidTitle.attr("id", "vidTitle")
       vidDesc.attr("id", "desc")
+      videoPlayer.attr("class", "vidPlay")
 
       vidDiv.append(vidTitle)
       vidDiv.append(videoPlayer)
