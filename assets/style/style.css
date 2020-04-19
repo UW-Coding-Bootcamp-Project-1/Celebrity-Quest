@@ -166,6 +166,7 @@ body{
     background-color: #B0EBBD;
     font-family: 'Raleway', sans-serif;
     margin-top: -10px;
+    border: #D7F5DE solid 2px;
 }
 
 .articleImg {
@@ -182,7 +183,6 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: xx-large;
@@ -206,6 +206,11 @@ body{
     margin-right: auto;
     overflow: auto;
 
+}
+
+#news-articles {
+    background-color: #B0EBBD;
+    border-radius: 10px;
 }
 
 #vid-gif {

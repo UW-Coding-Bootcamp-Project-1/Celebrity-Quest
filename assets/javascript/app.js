@@ -25,7 +25,7 @@ var config = {
 $(".btn").on("click", function(event) {
     event.preventDefault();
     userInput = $("#search").val().trim();
-    $("#news").show();
+    $("#news-articles").show();
     $("#articles").show();
     $("#name-image").show();
     $("#yt-section").show()

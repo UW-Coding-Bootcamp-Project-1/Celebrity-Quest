@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("#news").hide();
+  $("#news-articles").hide();
   $("#articles").hide();
   $("#name-image").hide();
 })
