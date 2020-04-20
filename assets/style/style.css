@@ -362,24 +362,32 @@ nav {
         margin-left: 8%;
     }
 
+    #search-section {
+        width: 500px;
+    }
+
+    .search-input {
+        display: flex;
+        flex-direction: column;
+    }
+
     #top-section {
-        width: 80%;
-        display: block;
-        margin: 30px;
+        width: 500px;
+    }
+    
+    .subheader {
+        width: 100%;
+
     }
     
     #history {
         width: 350px;
-        margin-left: -10px;
     }
 
     #search {
         width: 200px;
     }
 
-    #search-section p {
-        width: 350px;
-    }
 
     #actor-name {
         margin-left: 15px;
