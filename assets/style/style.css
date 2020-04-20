@@ -25,6 +25,7 @@ body{
 
 
 #history {
+    flex: 1;
     background-color: #F7C0AC;
     height: auto;
     width: 200px;
@@ -58,6 +59,10 @@ body{
     margin-top: 40px;
     width: 80%;
   
+}
+
+#search-section {
+    flex: 1;
 }
 
 #search-section p {
@@ -217,7 +222,7 @@ body{
 #vid-gif {
     display: flex;
     width: 80%;
-    margin: auto;
+   
 }
 
 .vidPlay {
@@ -309,3 +314,80 @@ body{
     border-radius: 10px;
 }
 
+@media screen and (max-width: 640px) {
+    body {
+        width: 640px;
+    }
+
+    #header {
+        width: 100%;
+    }
+
+    #header h1 {
+        margin-left: 8%;
+    }
+
+    #top-section {
+        width: 80%;
+        display: block;
+        margin: 30px;
+    }
+    
+    #history {
+        width: 350px;
+        margin-left: -10px;
+    }
+
+    #search {
+        width: 200px;
+    }
+
+    #search-section p {
+        width: 350px;
+    }
+
+    #actor-name {
+        margin-left: 15px;
+        width: 350px;
+    }
+
+    #main-section {
+        width: 80%;
+    }
+
+    #news {
+        width: 400px;
+        margin-left: 15px;
+    }
+
+    #articles {
+        display: block;
+    }
+
+    #article1 {
+        margin-left: 40px;
+    }
+
+    #article2 {
+        margin-left: 40px;
+    }
+
+    #article3 {
+        margin-left: 40px;
+        margin-bottom: 50px;
+    }
+
+    #vid-gif {
+        display: block;
+    }
+
+    #yt-section {
+        margin-left: 12px;
+    }
+
+    #gif-section {
+        margin-left: 12px;
+        
+    }
+
+}
