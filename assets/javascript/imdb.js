@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("#news").hide();
+  $("#news-articles").hide();
   $("#articles").hide();
   $("#name-image").hide();
 })
@@ -26,7 +26,7 @@ function displayArticles(celebrity) {
       $("#article1").append(articleHead1);
 
       var imgUrl1 = response.articles[0].urlToImage;
-      var articleImg1 = $('<img src="' + imgUrl1 + '" width="200">');
+      var articleImg1 = $('<img src="' + imgUrl1 + '">');
       articleImg1.addClass("articleImg");
       $("#article1").append(articleImg1);
     
@@ -41,7 +41,7 @@ function displayArticles(celebrity) {
       $("#article2").append(articleHead2);
 
       var imgUrl2 = response.articles[1].urlToImage;
-      var articleImg2 = $('<img src="' + imgUrl2 + '" width="200">');
+      var articleImg2 = $('<img src="' + imgUrl2 + '">');
       articleImg2.addClass("articleImg");
       $("#article2").append(articleImg2);
       
@@ -56,7 +56,7 @@ function displayArticles(celebrity) {
       $("#article3").append(articleHead3);
 
       var imgUrl3 = response.articles[2].urlToImage;
-      var articleImg3 = $('<img src="' + imgUrl3 + '" width="200">');
+      var articleImg3 = $('<img src="' + imgUrl3 + '">');
       articleImg3.addClass("articleImg");
       $("#article3").append(articleImg3);
       
