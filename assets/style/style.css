@@ -7,15 +7,22 @@ body{
     width: 100%;
 }
 
+nav {
+    background-color: #B0EBBD;
+    display: table;
+    text-align: center;
+    padding: 25px 0px;
+}
+ 
+
 #header {
-    display: flex;
     background-color: #B0EBBD;
     color: #313B56;
     font-family: 'Abril Fatface', cursive;
-    font-size: 40px;
+    font-size: 60px;
     text-align: center;
     width: 100%;
-
+    margin-top: 20px;
 }
 
 #header h1 {
@@ -34,14 +41,16 @@ body{
     border-radius: 4px;
 }
 
+
 #history h2 {
     font-family: 'Abril Fatface', cursive;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 10px;
+    font-size: large;
 }
 
 #history p {
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Raleway', sans-serif;
     font-size: small;
     padding: 3px;
   
@@ -54,12 +63,22 @@ body{
 }
 
 #top-section {
-    display: flex;
+    display: table;
     margin: auto;
     margin-top: 40px;
     width: 80%;
   
 }
+
+
+#top-section {
+    background-color: white;
+    height: auto;
+}
+
+.subheader {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
 
 #search-section {
     flex: 1;
@@ -69,14 +88,26 @@ body{
     font-family: 'Abril Fatface', cursive;
     background-color: #F7C0AC;
     color: #313B56;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 20px 0px;
+    margin-top: 0px;
+    text-align: center;
+    font-size: larger;
+    font-style: italic;
 }
 
+.row {
+    margin: 5px 12px 0px 0px;
+}
+
+.search-input {
+    display: flex;
+    margin-right: 12px;
+    align-self: center;
+}
 
 #search {
     flex: 1;
-    width: 300px;
+    width: 500px;
     height: 30px;
     background-color: #B0EBBD;
     color: #313B56;
@@ -86,7 +117,19 @@ body{
 
 #search-bar {
     display: flex;
+    width: 100%;
 }
+
+.card-panel {
+    max-width: 200px;
+    margin-left: 10px;
+}
+
+::placeholder {
+    color: white;
+    font-style: italic;
+}
+
 
 #submit {
     background-color:#F7C0AC;
