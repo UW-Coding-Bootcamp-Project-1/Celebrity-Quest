@@ -57,7 +57,7 @@ function videos(celebrity) {
       $("#youtube").append(vidDiv)
       }
     });
+    $("#youtube").empty()
   }
 
-$("#youtube").empty()
 
