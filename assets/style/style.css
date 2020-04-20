@@ -32,6 +32,7 @@ nav {
 
 
 #history {
+    flex: 1;
     background-color: #F7C0AC;
     height: auto;
     width: 200px;
@@ -161,7 +162,7 @@ nav {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 350px;
-    height: 250px;
+    height: 225px;
     overflow: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -176,7 +177,7 @@ nav {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 350px;
-    height: 250px;
+    height: 225px;
     overflow: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -191,7 +192,7 @@ nav {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 350px;
-    height: 250px;
+    height: 225px;
     overflow: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -205,12 +206,14 @@ nav {
     background-color: #B0EBBD;
     font-family: 'Raleway', sans-serif;
     margin-top: -10px;
+    border: #D7F5DE solid 2px;
 }
 
 .articleImg {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    height: 65%;
 }
 
 #news {
@@ -221,7 +224,6 @@ nav {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: xx-large;
@@ -247,10 +249,15 @@ nav {
 
 }
 
+#news-articles {
+    background-color: #B0EBBD;
+    border-radius: 10px;
+}
+
 #vid-gif {
     display: flex;
     width: 80%;
-    margin: auto;
+   
 }
 
 .vidPlay {
@@ -342,3 +349,80 @@ nav {
     border-radius: 10px;
 }
 
+@media screen and (max-width: 640px) {
+    body {
+        width: 640px;
+    }
+
+    #header {
+        width: 100%;
+    }
+
+    #header h1 {
+        margin-left: 8%;
+    }
+
+    #top-section {
+        width: 80%;
+        display: block;
+        margin: 30px;
+    }
+    
+    #history {
+        width: 350px;
+        margin-left: -10px;
+    }
+
+    #search {
+        width: 200px;
+    }
+
+    #search-section p {
+        width: 350px;
+    }
+
+    #actor-name {
+        margin-left: 15px;
+        width: 350px;
+    }
+
+    #main-section {
+        width: 80%;
+    }
+
+    #news {
+        width: 400px;
+        margin-left: 15px;
+    }
+
+    #articles {
+        display: block;
+    }
+
+    #article1 {
+        margin-left: 40px;
+    }
+
+    #article2 {
+        margin-left: 40px;
+    }
+
+    #article3 {
+        margin-left: 40px;
+        margin-bottom: 50px;
+    }
+
+    #vid-gif {
+        display: block;
+    }
+
+    #yt-section {
+        margin-left: 12px;
+    }
+
+    #gif-section {
+        margin-left: 12px;
+        
+    }
+
+}
