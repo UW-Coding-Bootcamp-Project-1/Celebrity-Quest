@@ -3,7 +3,7 @@ font-family: 'Abril Fatface', cursive; // Main Header
 font-family: 'Raleway', sans-serif; // Subheaders/body paragraphs */
 
 body{
-    background-image: url(assets/images/more-leaves.png);
+    background-image: url(/assets/images/more-leaves.png);
     width: 100%;
 }
 
