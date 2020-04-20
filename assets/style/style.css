@@ -3,7 +3,7 @@ font-family: 'Abril Fatface', cursive; // Main Header
 font-family: 'Raleway', sans-serif; // Subheaders/body paragraphs */
 
 body{
-    background-image: url(/assets/images/more-leaves.png);
+    background-image: url(assets/images/more-leaves.png);
     width: 100%;
 }
 
@@ -70,7 +70,6 @@ nav {
   
 }
 
-
 #top-section {
     background-color: white;
     height: auto;
@@ -79,13 +78,6 @@ nav {
 .subheader {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
-
-#search-section {
-    flex: 1;
-}
-
-#search-section p {
-    font-family: 'Abril Fatface', cursive;
     background-color: #F7C0AC;
     color: #313B56;
     padding: 20px 0px;
